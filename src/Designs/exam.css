@@ -1,5 +1,7 @@
 body {
     overflow: scroll;
+    background: url('../../Assets/Images/bg.jpg');
+
  }
 *{
     margin: 0;
