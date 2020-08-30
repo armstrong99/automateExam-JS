@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Main</title>
+</head>
+<style>
+#editModal {
+    
+    overflow: auto;
+    margin: 0 auto;
+    z-index: 20;
+    background: #5f4a4a;
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    position: fixed;
+    /* left: 25%; */
+    display: flex;
+    box-shadow: 1px -2px 20px 20px #0000005e;
+    right: 20%;
+    flex: 1;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.mainDisp {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-flow: column;
+    background: #071a38;
+    height: 40rem;
+    width: 30rem;
+    margin: 0 auto;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+}
+
+.mainDisp:hover {
+    transform: translateY(-1rem);
+    box-shadow: 2px 5px 3px 2px #00000085;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+}
+
+section article h1, h4 {
+    color: #b3b1b1;
+}
+ ul li {
+    color: white 
+ }
+p{
+    color: white;
+    padding-left: 2rem;
+}
+button {
+    margin-top: 3rem;
+    background: white;
+    padding: .9rem;
+    width: max-content;
+    border: none;
+    font-size: large;
+    color: #071a38;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+* {
+    font-family: sans-serif;
+ }
+ h1 {
+     text-align: center;
+ }
+@media screen and (max-width: 48rem) {
+    * {
+        font-family: sans-serif;
+     }
+    h1 {
+        text-align: center;
+    }
+    .mainDisp {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        flex-flow: column;
+        background: #071a38;
+        height: 40rem;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5rem;
+        
+    }
+    section article h1, h4 {
+        color: #b3b1b1;
+    }
+     ul li {
+        color: white 
+     }
+    p{
+        color: white;
+        padding-left: 2rem;
+    }
+    button {
+        margin-top: 3rem;
+        background: white;
+        padding: .9rem;
+        width: max-content;
+        border: none;
+        font-size: large;
+        color: #071a38;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+</style>
+
+<body>
+    <h1 id="head">All Exams</h1>
+
+    <button id="addStory">
+        <a href="../Views/admin.dashbord.html">
+            Create an exam
+        </a>
+         </button>
+
+    <section id="exam" style="display: flex; margin-top: 5rem; flex-wrap: wrap; justify-content: space-around; width: 100%; align-items: center"></section>
+
+
+
+
+
+    <script src="../../admin.main.js"></script></script>
+    <!-- <script src="../../admin.dash.js"></script></script> -->
+</body>
+</html>

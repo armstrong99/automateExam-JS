@@ -1,0 +1,137 @@
+@media screen and (max-width: 48rem) {
+    nav h2 {
+        display: none;
+    }
+    main section:first-child {
+        display: flex;
+        flex-flow: column;
+    }
+
+    main img {
+        width: 95%;
+    }
+
+
+}
+main section:first-child {
+    display: flex;
+}
+
+main section:first-child article:first-child section {
+    margin-left: 2rem;
+     box-shadow: 2px 5px 3px 2px #00000085;
+     padding-bottom: 1rem;
+     width: 50%;
+    }
+    @media screen and (max-width: 48rem) {
+        main section:first-child article:first-child section {
+            width: 90%;
+
+        }
+
+}
+
+main section:first-child article:first-child section h3 {
+    background: #4746e0;
+    font-family: sans-serif;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+main section:first-child article:first-child section input {
+    display: block;
+    width: 85%;
+    margin: 2rem  auto;
+    padding: .5rem;
+    border: 1px solid #4746e0;
+
+}
+main section:first-child article:first-child section select {
+    display: block;
+    width: 85%;
+    margin: 2rem  auto;
+    padding: .5rem;
+    border: 1px solid #4746e0;
+}
+main section:first-child article:first-child h1:first-child {
+    font-size: xxx-large;
+    color: #4746e0;
+    font-family: sans-serif;
+    padding-left: 2rem;
+
+}
+ 
+main section:first-child article:first-child h1:first-child + p {
+    line-height: 2rem;
+    font-size: large;
+    font-family: sans-serif;
+    color: #756c6c;
+    width: 75%;
+    padding-left: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    align-items: center;
+}
+header h2 {
+    padding-left: 2rem;
+
+}
+header ul {
+    margin-top: 0;
+    display: flex;
+    width: 40rem;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: small;
+
+}
+
+header ul li a:hover {
+    color: maroon
+}
+
+footer {
+    display: fixed;
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    bottom: 0;
+    top: 100vh;
+    padding-top: 3rem;
+    font-size: small;
+}
+
+#stExam button{
+    padding: .5rem;
+    border-radius: .5rem;
+    background: #06064a;
+    color: white;
+    outline: none;
+    border: none;
+    width: 8rem;
+    cursor: pointer;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .5s;
+}
+#stExam {
+    display: flex;
+    justify-content: center;
+    
+}
+#stExam button:hover{
+    transform: translateY(-0.2rem);
+    color: #06064a;
+    background: white;
+    border: 1px solid #06064a;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .5s;
+    font-weight: 600;
+}

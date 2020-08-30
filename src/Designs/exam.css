@@ -1,0 +1,213 @@
+body {
+    overflow: scroll;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#timeOut {
+    position: fixed;
+    top: 0;
+    color: #00ffd0cf;
+    padding: 1rem;
+}
+@keyframes myarms {
+    from{
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0rem);
+        opacity: 1; 
+    }
+}
+
+.animateArt {
+    animation: myarms 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@media screen and (max-width: 48rem) {
+    #quesArt {
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column;
+        align-content: space-around;
+        height: 100%;
+    }
+    #overlay {
+        background: #000000d6;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+        margin: 0;
+        top: 0;
+        background-size: cover;
+        }
+    body {
+
+        background: url('../../Assets/Images/bg.jpg');
+    }
+    main {
+         z-index: 20;
+        bottom: .1rem; 
+        height: auto; 
+        position: absolute;
+        top: 70%;
+     }
+    #qH {
+        font-size: xxx-large;
+    padding: .5rem;
+    color: white;
+    }
+    #sectArt {
+        width: auto;
+        font-size: 1.5rem;
+    }
+    .btnCl {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+     }
+    .btnCl button:disabled {
+        opacity: .2;
+    }
+
+    .btnCl button {
+        margin-top: 3rem;
+        background: #762ada;
+        padding: .5rem;
+        width: max-content;
+        border: none;
+        font-size: x-large;
+        color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    #quesArt h1 {
+        color: #762ada;
+        font-size: 2rem;
+        padding: 1rem;
+        margin-top: 20rem;
+     }
+        #quesArt h1 + p {
+            font-size: 1.2rem;
+    padding: 1rem;
+    color: #ffffffad;
+    line-height: 1.5rem;
+    width: 90%;
+    text-align: center;
+    font-weight: 100;
+        }
+     
+}
+
+
+
+@media screen and (min-width: 48rem) {
+    .btnCl {
+        margin-bottom: 3rem;
+        display: flex;
+    justify-content: space-around;
+    width: 60rem;
+    padding: 3rem;
+    }
+    .btnCl button:disabled {
+        opacity: .2;
+    }
+
+    .btnCl button {
+        background: #762ada;
+        padding: 1rem;
+        width: fit-content;
+        border: none;
+        font-size: xx-large;
+        color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    #quesArt {
+        display: flex;
+        flex: 1;
+        flex-flow: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;   
+     } 
+
+     #quesArt h1 {
+        color: #762ada;
+        font-size: 2rem;
+        padding: 1rem;
+     }
+        #quesArt h1 + p {
+            font-size: 1rem;
+    padding: 1rem;
+    color: #ffffffad;
+    line-height: 1.4rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 100;
+        }
+    #overlay {
+        background: #000000d6;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        z-index: 2;
+        margin: 0;
+        top: 0;
+        background-size: cover;
+    }
+    
+    main {
+        position: fixed;
+        width: 90%;
+        z-index: 20;
+        bottom: .1rem; 
+        height: 100vh; 
+     }
+    #qH {
+        font-size: xxx-large;
+    padding: .5rem;
+    color: white;
+    }
+    #sectArt {
+        width: 50rem;
+        font-size: 1.5rem;
+    }
+
+
+
+}
+/* #quesArt {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    background: silver;
+    width: 40%;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 50vh auto;
+} */
+
+#quesArt #sectArt p {
+    padding: .5rem;
+    border-bottom: 1px solid black;
+}
+
+#quesArt #sectArt p:hover {
+    box-shadow: #ffffffad;
+    background: -moz-repeating-linear-gradient();
+    cursor: pointer;
+    color: #0eb596;
+    font-size: larger;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) .5s;
+}

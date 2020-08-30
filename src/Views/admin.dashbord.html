@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+
+<style>
+    * {
+        font-family: sans-serif;
+     }
+input, textarea {
+    display: block;
+    width: calc(100% - 5rem);
+    margin: 2rem  auto;
+    padding: .5rem;
+    border: 1px solid #4746e0;
+
+}
+
+button {
+         background: #071a38;
+        padding: .9rem;
+        width: max-content;
+        border: none;
+        font-size: large;
+        color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+article h2 {
+    text-align: center;
+    
+}
+
+article p {
+    line-height: 2rem ;
+    text-align: center;
+}
+
+
+</style>
+
+
+
+<body>
+    <h1 style="text-align: center;"> Add an Exam</h1>
+ 
+    <input 
+    type="text"
+    placeholder="Question's title"
+    id = "title"
+    required="true"
+    name="title"
+    />
+    <br />
+    <br />
+
+    <textarea
+    placeholder="Details of the story"
+     id = "details"
+    required="true"
+    name="content"
+    ></textarea>
+
+    <br />
+    <br />
+
+    <input
+    type="text"
+    placeholder="What's your Question ?"
+    id="quest"
+    required="true"
+    name="ques"
+     />
+    <button 
+    value="Add"
+    name="addQues"
+    type="submit"
+    >Add</button>
+    <br />
+    <br />
+    
+ 
+    
+        <!-- <input
+        type="text"
+        placeholder="What's your options ?"
+          required="true"
+         name="options"
+        />
+        <button 
+        value="Add"
+        >Add</button> -->
+  
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    
+   <button value="save" id="sub">save Story</button>  
+    
+
+   <article>
+       <h2>How to Fill the form</h2>
+       <p>
+           <strong>Question Title</strong>: This is a general name or topic where the question is coming from
+       </p>
+ 
+       <p>
+           <strong>Question Story</strong>: This is the short story where the questions are picked from
+       </p>
+
+       <p>
+           <strong>What's your Question</strong>: This is the Actual Question and when clicked on add it shows you the options for the quesion,pls check one of the four as the correct option.
+       </p>
+   </article>
+
+ 
+    
+<script src="../../admin.dash.js"></script>
+</body>
+</html>

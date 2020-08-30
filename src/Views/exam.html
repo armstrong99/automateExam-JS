@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../Designs/exam.css" />
+    <title>Automate Exam</title>
+</head>
+<body>
+    <section id="overlay"></section>
+     
+    
+    <main>
+
+        <article id="quesArt">
+            <h1></h1>
+            <p></p>
+            
+            <h2 id="qH"></h2>  
+        
+            <section id="sectArt">
+                <p id="pOne" onclick="getP(this)"></p>
+                <p id="pTwo" onclick="getP(this)"></p>
+                <p id="pThree" onclick="getP(this)"></p>
+                <p id="pFour" onclick="getP(this)"></p>
+            </section>
+    
+    <section class="btnCl">
+        
+        <button id="next" onclick="next()">Next</button>
+
+        <button id="prev" onclick="prev()">Prev</button>
+    
+    
+        <button id="seeRes" onclick="scoreStudent()">See Result</button>
+
+
+    </section> 
+
+
+            </article>
+       
+    
+    
+    <br>
+    <br>
+    <br>
+    
+    
+        <h1 id="timeOut"></h1>
+    
+
+    </main>
+
+
+    <script src="../../dom.api.js"></script>
+</body>
+</html>
