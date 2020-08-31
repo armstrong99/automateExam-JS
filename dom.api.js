@@ -175,7 +175,11 @@ const showQuestion = (quesObj = MCQS[cursor]) => {
         
         showQuestion()
 
+        let nextClicked = false
+
 const next = () => {
+
+             nextClicked = true;
 
              for(let i = 0; i < document.querySelectorAll("section p").length; i++) {
                 document.querySelectorAll("section p")[i].style.background = "white" 
@@ -202,21 +206,25 @@ const next = () => {
 
 const prev = () => {
 
-    for(let i = 0; i < document.querySelectorAll("section p").length; i++) {
-        document.querySelectorAll("section p")[i].style.background = "white" 
+    if(nextClicked === true) {
 
-    }
-    document.getElementById("quesArt").classList.add("animateArt")
+        for(let i = 0; i < document.querySelectorAll("section p").length; i++) {
+            document.querySelectorAll("section p")[i].style.background = "white" 
     
-   cursor--
+        }
+        document.getElementById("quesArt").classList.add("animateArt")
+        
+       cursor--
+    
+       document.getElementById("next").disabled = false
+    
+        if(cursor === 0) {
+            document.getElementById("prev").disabled = true
+         }
+         
+        showQuestion()
+    }
 
-   document.getElementById("next").disabled = false
-
-    if(cursor === 0) {
-        document.getElementById("prev").disabled = true
-     }
-     
-    showQuestion()
 }
 
 
