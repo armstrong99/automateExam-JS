@@ -194,21 +194,19 @@ document.getElementById('sub').addEventListener("click", e => {
         if(localStorage.getItem("QBODY")) {
            let dbArr = JSON.parse(localStorage.getItem("QBODY"))
 
-           dbArr.push(
-               qBody[0]
-           )
+           dbArr.push(qBody[0])
            let ans = JSON.stringify(dbArr )
            
            localStorage.setItem("QBODY", ans)
 
-           window.location.replace('/')
+          window.location.assign('/')
         } 
         
         else {
 
             localStorage.setItem("QBODY", myarr)
        
-            window.location.replace('/')
+            window.location.assign('/')
         }
       
     } 
