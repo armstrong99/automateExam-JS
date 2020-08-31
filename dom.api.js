@@ -90,11 +90,22 @@ let maxScore = MCQS.length * 5;
 document.getElementById("seeRes").style.display = "none"
 
 const scoreStudent = () => {
+console.log(MCQS)
 
 // get array here of obj where the pickVal last item is equal to the currI
 
-let points = MCQS.filter((_que, i) => _que.correctI === _que.pickVal.slice(-1)[0]).length * 5;
+const giveQue = (num) => {
+    if(num === 0) {
+        return 1
+    }
+     else return num
+}
+
+let points = MCQS.filter((_que, i) => (giveQue(_que.correctI) - 1) === _que.pickVal.slice(-1)[0]).length * 5;
+
+
             let avgScore = (points  / maxScore) * 100;
+
             if(avgScore >= 75) {
                 alert("You passed with " + points + " points" + " making a total of " + avgScore + " Congratulation!!!!!" )
             }
@@ -119,8 +130,6 @@ const getP = (e) => {
      
 targetObj.pickVal.filter((item) => item !== picArr[0]).map(n => allChild[n].style.background = "white")
  
-   
-
 }
 
 const showQuestion = (quesObj = MCQS[cursor]) => {
@@ -139,7 +148,9 @@ const showQuestion = (quesObj = MCQS[cursor]) => {
                 
                 allChild[ quesObj.pickVal.slice(-1) ].style.background = "#4c4c03c2"
 
-            } else {
+            } 
+            
+            else {
                 for(let i = 0; i < document.querySelectorAll("section p").length; i++) {
                     document.querySelectorAll("section p")[i].style.background = "white" 
 
